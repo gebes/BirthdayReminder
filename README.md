@@ -1,5 +1,7 @@
 # go-birthdayreminder
- Mail birthday reminder for our school class
+[![GoReportCard](https://goreportcard.com/badge/github.com/gebes/go-birthdayreminder)](https://goreportcard.com/report/github.com/gebes/go-birthdayreminder)
+
+Mail birthday reminder for our school class
 
 ## .env
 
