@@ -116,7 +116,6 @@ func hasBirthdayToday(user *database.User) bool {
 func getAge(user *database.User) int {
 	currentYear := time.Now().Year()
 	_, _, year := parseUserBirthday(user)
-	log.Println(currentYear, year)
 	return currentYear - year
 }
 
