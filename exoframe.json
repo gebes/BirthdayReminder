@@ -1,0 +1,6 @@
+{
+  "name": "birthdayreminder",
+  "restart": "always",
+  "compress": false,
+  "letsencrypt": false
+}

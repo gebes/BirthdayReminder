@@ -1,0 +1,34 @@
+<mjml version="3.3.3">   
+  <mj-head>
+        <mj-style>
+            .box-shadow a, .box-shadow p {
+                box-shadow: 0 4px 6px hsla(0,0%,46%,0.2), 0 1px 3px hsla(0,0%,46%,0.2);
+            }
+        </mj-style>
+    </mj-head>
+  <mj-body background-color="#F2F2F2">
+    <mj-spacer height="50px"/>
+    <mj-section background-color="#D4423A" padding="24px 0" text-align="center" border-radius="8px 8px 0px 0px" css-class="box-shadow">
+      <mj-column>
+                <mj-text align="center" color="#ffffff" font-family="Arial, sans-serif" font-size="26px" line-height="22px" padding="0px 20px" font-weight="bold">BirthdayReminder</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" background-repeat="repeat" padding="20px 0" text-align="center">
+      <mj-column>
+        <mj-image align="center" padding="0px 25px" src="https://i.imgur.com/HtDirMm.png" width="600px"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" background-repeat="repeat" background-size="auto" padding="20px 0px 20px 0px" text-align="center" border-radius="0px 0px 8px 8px">
+      <mj-column>
+        <mj-text font-weight="bold" color="#000000" font-family="Arial, sans-serif" font-size="24px" line-height="28px" padding="0px 25px 0px 25px">Hey %USER_NAME%!</mj-text>
+                <mj-text  color="#000000" font-family="Arial, sans-serif" font-size="16px" line-height="28px" padding="0px 25px 0px 25px">%BIRTHDAY%</mj-text>
+    <mj-spacer height="28px"/>
+      </mj-column>
+    </mj-section>
+    <mj-section background-repeat="repeat" background-size="auto" padding="20px 0px 20px 0px" text-align="center">
+      <mj-column>
+        <mj-text align="center" color="#55575d" font-family="Arial, sans-serif" font-size="11px" line-height="22px" padding="0px 20px">Ein Projekt von Christoph, Stefan, Toby und Fabian</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
