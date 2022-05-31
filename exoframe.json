@@ -1,5 +1,6 @@
 {
   "name": "birthdayreminder",
+  "domain": false,
   "restart": "always",
   "compress": false,
   "letsencrypt": false

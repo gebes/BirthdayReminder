@@ -2,15 +2,15 @@ package database
 
 import (
 	"database/sql"
-	_ "github.com/go-sql-driver/mysql"
 	"gebes.io/go-birthdayreminder/src/env"
+	_ "github.com/go-sql-driver/mysql"
 	"log"
+	"time"
 )
 
 var (
 	Database *sql.DB
 )
-
 
 func InitDatabase() {
 	log.Println("Connecting to database")
@@ -19,6 +19,9 @@ func InitDatabase() {
 		log.Fatalln(err)
 	}
 	Database = db
+	db.SetMaxIdleConns(10)
+	db.SetMaxOpenConns(100)
+	db.SetConnMaxLifetime(time.Hour)
 
 	// ping the database, just to be sure
 	err = db.Ping()
@@ -28,7 +31,6 @@ func InitDatabase() {
 	log.Println("Successfully connected to the database")
 	log.Printf("Currently %d connections are open\n", db.Stats().OpenConnections)
 }
-
 
 func close(countResult *sql.Rows) {
 	if countResult == nil {
